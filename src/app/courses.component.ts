@@ -36,7 +36,20 @@ import { CoursesService } from './course/courses.service';
                         [(ngModel)]="email" (keyup.enter)="onKeyUp()"
                         (click)="inputFocused()"
                         />
-                </div>`
+                </div>
+                <div>
+                <span class="glyphicon glyphicon-star"></span>
+                </div>
+
+                <div>
+                    <input [(ngModel)]="mirror"/>
+                    {{ mirror | mirrortitle}}
+                </div>
+
+
+                `
+
+                
 })
 export class CoursesComponent {
     title = "List of Courses ..............................................................";

@@ -10,6 +10,10 @@ import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
 import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from './summary.pipe';
+import { IconSComponent } from './icon-s/icon-s.component';
+import { MirrortitlePipe } from './mirrortitle.pipe';
+import { PanelComponent } from './panel/panel.component';
+import { LikerComponent } from './liker/liker.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { SummaryPipe } from './summary.pipe';
     CourseComponent,
     CoursesComponent,
     AuthorsComponent,
-    SummaryPipe
+    SummaryPipe,
+    IconSComponent,
+    MirrortitlePipe,
+    PanelComponent,
+    LikerComponent
   ],
   imports: [
     BrowserModule,
