@@ -3,3 +3,4 @@
 <ul [style.color]="color" (click)="onClick()">
   <li *ngFor="let author of authors">{{ author }}</li>
 </ul>
+<button (click)="loadAuthors()">Load Authors</button>

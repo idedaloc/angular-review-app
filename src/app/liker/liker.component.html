@@ -2,3 +2,7 @@
             (click)="onClick()"/></div>
 
 <div>{{ likeCount }}</div>
+
+<div *ngIf = "isActive; then likedByUser else notLikedByUser"></div>
+<ng-template #likedByUser>liked</ng-template>
+<ng-template #notLikedByUser>not liked</ng-template>

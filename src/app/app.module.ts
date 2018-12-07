@@ -14,6 +14,7 @@ import { IconSComponent } from './icon-s/icon-s.component';
 import { MirrortitlePipe } from './mirrortitle.pipe';
 import { PanelComponent } from './panel/panel.component';
 import { LikerComponent } from './liker/liker.component';
+import { NewCouseFormComponent } from './new-couse-form/new-couse-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LikerComponent } from './liker/liker.component';
     IconSComponent,
     MirrortitlePipe,
     PanelComponent,
-    LikerComponent
+    LikerComponent,
+    NewCouseFormComponent
   ],
   imports: [
     BrowserModule,

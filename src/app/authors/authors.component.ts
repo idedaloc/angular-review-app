@@ -13,14 +13,23 @@ export class AuthorsComponent implements OnInit {
   @Output() change = new EventEmitter;
 
   authors;
+  service;
 
   constructor(service: AuthorsService) { 
+    this.service = service;
     this.authors = service.getAuthors();
   }
   
     ngOnInit() {
   }
 
+  loadAuthors(){
+    this.authors = this.service.getAuthors();
+  }
+
+  trackAuthor(index, author){
+    return author ? author.index: undefined;
+  }
   onClick(){
     this.isColored = !this.isColored;
     this.color = this.isColored ? "blue" : "red"
